@@ -34,6 +34,23 @@ def set(p):
         games[winner] += 1
     
     print("games = " + str(games))
+    if games[0] > games[1]:
+        return 0
+    else:
+        return 1
 
 
-set(0.5)
+def match(p):
+    sets = [0,0]
+
+    while max(sets) < 2:
+        winner = set(p)
+        sets[winner] += 1
+
+    print(sets)
+
+
+
+
+
+match(0.5)
