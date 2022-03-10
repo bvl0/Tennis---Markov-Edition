@@ -1,1 +1,3 @@
-resultados.txt
+*.txt
+*.json
+__pycache__
