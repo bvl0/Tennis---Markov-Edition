@@ -1,5 +1,6 @@
 import tennis_model
 import json
+import random
 
 def game(model):
     while(not model.is_final_state()):
@@ -48,12 +49,12 @@ def match(model):
 
 
 if __name__ == "__main__":
-    n = 30
+    n = 3000
     with open('resultados.json', 'w') as file:
         data = []
         for _ in range(n):
-            model1 = tennis_model.tennis_model(0.7)
-            model2 = tennis_model.tennis_model(0.5)
+            model1 = tennis_model.tennis_model(random.randint(70, 80)/100)
+            model2 = tennis_model.tennis_model(random.randint(45, 55)/100)
 
             match(model1)
             match(model2)
