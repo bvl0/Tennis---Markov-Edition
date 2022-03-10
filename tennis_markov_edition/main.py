@@ -51,7 +51,7 @@ if __name__ == "__main__":
     n = 30
     with open('resultados.json', 'w') as file:
         data = []
-        for _ in range(30):
+        for _ in range(n):
             model1 = tennis_model.tennis_model(0.7)
             model2 = tennis_model.tennis_model(0.5)
 

@@ -118,4 +118,4 @@ class tennis_model:
         self.match_winner = winner
     
     def get_match_info(self):
-        return json.dumps({"sets":self.sets, "winner":self.match_winner})
+        return dict({"sets":self.sets, "winner":self.match_winner})
