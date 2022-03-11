@@ -50,11 +50,14 @@ def match(model):
 
 if __name__ == "__main__":
     n = 3000
+    pMatch1 = 75
+    pMatch2 = 50
     with open('resultados.json', 'w') as file:
         data = []
+
         for _ in range(n):
-            model1 = tennis_model.tennis_model(random.randint(70, 80)/100)
-            model2 = tennis_model.tennis_model(random.randint(45, 55)/100)
+            model1 = tennis_model.tennis_model(pMatch1 / 100)
+            model2 = tennis_model.tennis_model(pMatch2 / 100)
 
             match(model1)
             match(model2)

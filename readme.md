@@ -69,8 +69,8 @@ Para obter os dados abaixos, foram feitas **N = 3000** simulações.
 Dentre os testes realizados, foi escolhido o número **3000 repetições** para cada teste
 realizado, visando melhoria da precisão dos resultados obtidos.
 E ara P e Q:
-- P na partida 1 é aleatóriamente sorteado entre **[.70, .80]**
-- P na partida 2 é aleatoriamente sorteado entre **[.45, .55]**
+- P na partida 1 é **.75**
+- P na partida 2 é **.50**
 - E em ambas partidas o valor de Q é **Q = 1 - P**
 
 ##### Qual a probabilidade do Jogador A/B vencerem as Partidas 1 e a Partidas 2?
