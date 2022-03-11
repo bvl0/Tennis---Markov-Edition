@@ -27,7 +27,7 @@ Saída: *resultados.json*
 
 Para analisar os logs: **[Necessário ter rodado a simulação anteriormente]**
 ```
-python3 .\tennis_markov_edition\main.py
+python3 .\data_analysis\main.py
 ```
 Saída: 
 ```
