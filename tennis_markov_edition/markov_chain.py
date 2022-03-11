@@ -4,6 +4,7 @@ import random
 # p is the probability of A winning a point
 # q is the probability of B winning a point
 
+
 class chain:
     def __init__(self, states, p):
         self.states = states
@@ -22,6 +23,7 @@ class chain:
 # defines a state class
 # a state can be interpreted as a node in a directed graph
 # transitions are the adjacent vertices of the node
+
 
 class state:
     def __init__(self, name):

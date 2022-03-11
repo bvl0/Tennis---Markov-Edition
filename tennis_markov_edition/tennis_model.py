@@ -1,6 +1,5 @@
 from markov_chain import chain
 from markov_chain import state
-import json
 
 # defines a tennis model class
 
