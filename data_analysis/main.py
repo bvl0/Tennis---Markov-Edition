@@ -85,15 +85,15 @@ def sets_games_points(data, space_length):
 
         sets_a.append(len(m1.sets))
         games_a.append(sum(len(s) for s in m1.sets) - len(m1.sets))
-        points_a.append(list(map(lambda x: x[:-1], m1.sets)))
+        points_a.append(list(map(lambda x: list(map(lambda j: j[0] + j[1],x[:-1])), m1.sets)))
         
         sets_b.append(len(m2.sets))
         games_b.append(sum(len(s) for s in m2.sets) - len(m2.sets))
-        points_b.append(list(map(lambda x: x[:-1], m2.sets)))
+        points_b.append(list(map(lambda x: list(map(lambda j: j[0] + j[1],x[:-1])), m2.sets)))
 
 
-    points_a = sum(sum(sum(points_a, []), [],), [])
-    points_b = sum(sum(sum(points_b, []), [],), [])
+    points_a = sum(sum(points_a, []), [])
+    points_b = sum(sum(points_b, []), [])
 
     return [(np.mean(sets_a), np.std(sets_a)), (np.mean(games_a), np.std(games_a)), (np.mean(points_a), np.std(points_a)), (np.mean(sets_b), np.std(sets_b)), (np.mean(games_b), np.std(games_b)), (np.mean(points_b), np.std(points_b))]
 
