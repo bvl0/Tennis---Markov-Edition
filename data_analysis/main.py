@@ -168,9 +168,9 @@ def full_analysis(data, space_length, reps):
     data_1 = [
         ['A wins', a_1_mean, a_1_std, a_2_mean, a_2_std],
         ['B wins', b_1_mean, b_1_std, b_2_mean, b_2_std],
-        ['Sets', sets_a_mean, sets_a_std, sets_b_mean, sets_b_std],
-        ['Games', games_a_mean, games_a_std, games_b_mean, games_b_std],
-        ['Points', points_a_mean, points_a_std, points_b_mean, points_b_std],
+        ['Sets per match', sets_a_mean, sets_a_std, sets_b_mean, sets_b_std],
+        ['Games per match', games_a_mean, games_a_std, games_b_mean, games_b_std],
+        ['Points per game', points_a_mean, points_a_std, points_b_mean, points_b_std],
     ]
 
     print(tabulate(data_1, headers=['Label', 'Mean M1', 'Std M1', 'Mean M2', 'Std M2'], tablefmt='orgtbl'))
