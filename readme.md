@@ -20,14 +20,16 @@ O projeto é dividido em dois subprojetos, *tennis_markov_edition* e *data_analy
 
 Para executar a simulação:
 ```
-python3 .\tennis_markov_edition\main.py
+python3 .\tennis_markov_edition\main.py # windows
+python3 ./tennis_markov_edition/main.py # linux
 ```
 Saída: *resultados.json*
 **Foi escolhido o formato de log em json pela facilidade de estruturar/ler o dataset.**
 
 Para analisar os logs: **[Necessário ter rodado a simulação anteriormente]**
 ```
-python3 .\data_analysis\main.py
+python3 .\data_analysis\main.py # windows
+python3 ./data_analysis/main.py # linux
 ```
 Saída: 
 ```
