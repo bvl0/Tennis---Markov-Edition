@@ -177,7 +177,7 @@ def full_analysis(data, space_length, reps):
 
 
 if __name__ == "__main__":
-    with open('resultados.json', 'r') as file:
+    with open('resultados.txt', 'r') as file:
         data = json.load(file)
         print('\nWith 3 Samples\n')
         full_analysis(data, 3, 3000)

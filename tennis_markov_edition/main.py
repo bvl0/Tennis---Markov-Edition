@@ -52,7 +52,7 @@ if __name__ == "__main__":
     n = 3000
     pMatch1 = 75
     pMatch2 = 50
-    with open('resultados.json', 'w') as file:
+    with open('resultados.txt', 'w') as file:
         data = []
 
         for _ in range(n):
